@@ -35,8 +35,8 @@ lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
     staircase=True)
 
 # sgd = tf.keras.optimizers.SGD(learning_rate=lr_schedule)
-adam = tf.keras.optimizers.SGD(learning_rate=lr_schedule)
-model.compile(optimizer=adam, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+sgd = tf.keras.optimizers.SGD(learning_rate=lr_schedule)
+model.compile(optimizer=sgd, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 print("--Fit model--")
 model.fit(x_train, y_train, batch_size = 32, epochs=10, verbose=2)
