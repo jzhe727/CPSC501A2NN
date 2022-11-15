@@ -4,7 +4,7 @@
 
 ## Neural Network
 
-This project is meant as an introduction to neural networks.
+This project is meant as a neural networks assignment for the Univercity of Calgary, CPSC 501 Fall 2022 taught by Jonathan Hudson.
 
 ## King's County Housing Data
 
